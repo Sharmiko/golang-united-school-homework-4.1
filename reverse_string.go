@@ -1,8 +1,8 @@
 package reverse_string
 
 func ReverseString(input string) (output string) {
-	for i := len(input) - 1; i >= 0; i-- {
-		output += string(input[i])
+	for _, r := range input {
+		output = string(r) + output
 	}
 	return output
 }
